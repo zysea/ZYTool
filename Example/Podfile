@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ZYTool_Example' do
+  pod 'ZYTool', :path => '../'
+
+  target 'ZYTool_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
