@@ -1,0 +1,16 @@
+PODS:
+  - ZYTool (0.0.1)
+
+DEPENDENCIES:
+  - ZYTool (from `../`)
+
+EXTERNAL SOURCES:
+  ZYTool:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ZYTool: dc68abb976a5686c2186560f898b22c60f5ca3e0
+
+PODFILE CHECKSUM: 6c397e2fd702a6852526fb51d648a77ff02c0d2e
+
+COCOAPODS: 1.8.4

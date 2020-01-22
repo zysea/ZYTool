@@ -18,6 +18,13 @@ profile
 DerivedData
 *.hmap
 *.ipa
+.DS_Store
+xcuserdata/
+xcshareddata/
+Pods/
+Podfile.lock
+
+
 
 # Bundler
 .bundle
