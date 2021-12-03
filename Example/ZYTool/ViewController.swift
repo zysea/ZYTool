@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import ZYTool
+import ZSTool
 
 class ViewController: UIViewController {
 
