@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'ZYFoundation'
+  s.name             = 'ZSTool'
   s.version          = '0.0.1'
   s.summary          = 'A short description of ZYTool.'
 

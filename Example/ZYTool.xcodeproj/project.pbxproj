@@ -31,7 +31,7 @@
 		148D4FE58218E8E97DB3E311 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		39B17F90CCBFC251C8525279 /* Pods-ZYTool_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYTool_Example.debug.xcconfig"; path = "Target Support Files/Pods-ZYTool_Example/Pods-ZYTool_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		4FE42D97FDE2C864AC92E6E1 /* Pods_ZYTool_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZYTool_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		54733FD9E5D06E0920127085 /* ZYFoundation.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZYFoundation.podspec; path = ../ZYFoundation.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		54733FD9E5D06E0920127085 /* ZSTool.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZSTool.podspec; path = ../ZSTool.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5798457D21A5AD6D8B892F31 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* ZYTool_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYTool_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -143,7 +143,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				54733FD9E5D06E0920127085 /* ZYFoundation.podspec */,
+				54733FD9E5D06E0920127085 /* ZSTool.podspec */,
 				148D4FE58218E8E97DB3E311 /* README.md */,
 				5798457D21A5AD6D8B892F31 /* LICENSE */,
 			);
