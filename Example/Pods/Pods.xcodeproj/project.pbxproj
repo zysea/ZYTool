@@ -6,19 +6,6 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		E8AF5C1FBA887A6FEB3DFEF4E80E0C4A /* ZSTool */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = EA6B48FD6F1229B1304407BE322A1CE2 /* Build configuration list for PBXAggregateTarget "ZSTool" */;
-			buildPhases = (
-			);
-			dependencies = (
-				2B6F2C7A0F81826636F3123FBC185A8B /* PBXTargetDependency */,
-			);
-			name = ZSTool;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
 		144DA93A55A598F5197F10C729FBDD69 /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9341666EAC154422A032092A7DC2D7 /* UILayoutSupport+Extensions.swift */; };
 		14D1D18F765ACA71EEADF56C2F8B1EE8 /* Pods-ZYTool_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BEABCFE9C32040F8C15FDF5B5F9E11A8 /* Pods-ZYTool_Example-dummy.m */; };
@@ -26,18 +13,25 @@
 		1E9EEA756F2774D73347F1660EEFE3E9 /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9055CEA7890517265589BD23D73A49 /* ConstraintView+Extensions.swift */; };
 		274DF0E2BF04F6F4F9F1E70CF513A4F2 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A46A8054577838D49C60142EB88B13 /* ConstraintLayoutSupportDSL.swift */; };
 		2EFE024E148EBAD72AAB1E2EE575CEC8 /* Pods-ZYTool_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6714C2B6E7A71EFE7F8915D4FCEC86 /* Pods-ZYTool_Tests-dummy.m */; };
+		3A56DFB8DDD7BE0BFCEA9D9F7814679E /* AreaTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B97ABDC9895B45CA204182F48A569 /* AreaTitleCell.swift */; };
 		3B60C02F6E42FD06B128473E00A94224 /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D705690D879064ED84970813189D8D4 /* ConstraintLayoutSupport.swift */; };
 		3CD5FAFC746A76D73C3F501734199DFF /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E066869A95E00B949CBA4D2284C35F /* Typealiases.swift */; };
 		3DEDFA52B3A196F6D3E1F0937617628A /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BF299D2EEB87E7DD02630E87B96224 /* ConstraintLayoutGuide+Extensions.swift */; };
+		41F39E26211050903AA164D6E7ABB981 /* ZSTool-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE2E84CC0E36CC3A4F79F67248FD752 /* ZSTool-dummy.m */; };
 		43863B6D6A0E47B6648BB7B469736EDD /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C5B72775F6AF0891BF331F32FE10D /* LayoutConstraint.swift */; };
 		44493BB62BC2E6C2EB45B60CC60A6E28 /* Pods-ZYTool_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F6BB06B52C317C0A8B10B75D8D1D319C /* Pods-ZYTool_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		479EACF56536ABD76EA3784ACE1B304E /* Pods-ZYTool_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B40274B9EF7D50EC167E2536433FB438 /* Pods-ZYTool_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C7011BA1E943B5AE578D19861407E60 /* AreaContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26E3331FF727FD29CF47D72C7AF26E1 /* AreaContentCell.swift */; };
 		4CA13A0527BC57DE2C54A0F3B5ED8652 /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464C01543F3BCEDEE51ABAA696513D0B /* LayoutConstraintItem.swift */; };
 		51A4A1046676D304410544EB56732A49 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50380F281EC3EE769C85035CCEA77226 /* Constraint.swift */; };
 		5E8BA529DFB4529006967624044FEC1C /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56006AA49A060CA2830F32CD6F394823 /* ConstraintViewDSL.swift */; };
 		62F299B4704A7C95FB5866C6CDE2E2FD /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B200BD964F52F6693D4168248B8645 /* ConstraintOffsetTarget.swift */; };
+		684B3AEE8FF50A76D05DB9EA4A8361B7 /* AreaContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBF108DB5AFAB74D6D164C33059BACF /* AreaContentView.swift */; };
+		6EADB7BB7AB653A3D6C98CC8C27F8F7A /* AreaConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877E325B31C76B2DD1D43EB25402D61C /* AreaConfig.swift */; };
 		7580FAAB1BDA52F5A969E5571D1A5973 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F460233F2A555D41511B6CCA66A124 /* ConstraintAttributes.swift */; };
 		7764AA5F6BBFC6ECE43959923DD007D3 /* ConstraintDirectionalInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D358AA1606C7B2CDC8555485807E9E /* ConstraintDirectionalInsetTarget.swift */; };
+		7D40CEF0EAEBFFA7C9EA97F72D0866EA /* ZYWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88415114DC3ECCE95C8390404837DE96 /* ZYWrapper.swift */; };
+		7E35D2808296F4CD97A3467964694706 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
 		825062025906CE93C5D124E1FD9A811E /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43F10DE451FED17810D9B5C237324A5 /* ConstraintMakerExtendable.swift */; };
 		8449EB1DFD43E222D687D5A8D2088D2D /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0BE9F3D55FDB29EF516F6D6B1B6BCA /* ConstraintLayoutGuideDSL.swift */; };
 		8C6546C1EF4F153DF3795CC6FE189E5B /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549471CD1FE3A1E1865DD172864918D3 /* ConstraintInsets.swift */; };
@@ -47,20 +41,25 @@
 		A0F754C88A64972A40A9008B0AD52109 /* ConstraintDirectionalInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91164BE769DA144776663FBF46785561 /* ConstraintDirectionalInsets.swift */; };
 		A4467357581E8345DD348683CC4111AF /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0116B84A6773B75FCBFCB479E740F0F3 /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A53D3AF15CE8D348306EF11619C5D166 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3B0B200350EAC8F42EF635FF31BD1 /* ConstraintMakerEditable.swift */; };
-		AB077960A2850D08702D24B42C15AF70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		AB077960A2850D08702D24B42C15AF70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		B136B74DC226561DCC6A05EF677BF079 /* ZSTool-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BB27B0A99417AD8BB1606424A93307CE /* ZSTool-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B543FD108C1C6AF6129CB4991553218B /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250E41DBB680A3A2ECDDD2210311B230 /* ConstraintConfig.swift */; };
+		B6F85195236F392C8E00A203CE353878 /* AreaTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD08064AB3F3E1D1A5BDC9BA116FB6E5 /* AreaTitleView.swift */; };
 		BD333CDBCF5D2FD55920336FC271DF33 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474AFC560A8B414B467174737DBC891A /* ConstraintItem.swift */; };
 		BEBF920FEB959B46A76BAADF22E5CD15 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2EC377264B25FB0E67D150E37E87CD /* ConstraintInsetTarget.swift */; };
 		C61D3BC32A28A405C934C00039AD2583 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D990E0FED5B41C1F13AC6B08208A99B /* ConstraintConstantTarget.swift */; };
 		CB194156C900B767B0160AF72EDF354D /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141BC33167429B9926FB24A17F01568C /* ConstraintMaker.swift */; };
 		CB8E4BF0D710970BE2CB4C87ED1043E4 /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724FB64349F5678CE1709979CF0DD952 /* ConstraintMakerRelatable.swift */; };
-		CCA22C9F421C9E8C13009947816D8C82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		CCA22C9F421C9E8C13009947816D8C82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
 		D13D417B236E736EEAE7217B5CE3EC5C /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D02329E74D733C03BF6BAE1F564481 /* ConstraintMakerFinalizable.swift */; };
 		D59C2826AD288ECFF576B2AFA312716C /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25479F58B67AA43E092C7B156C1B5C1B /* ConstraintRelation.swift */; };
+		D6F5737AB9E679D0293AC0D1524F2F8C /* String+ZY.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E356417188489FD0924933B75AB3FC /* String+ZY.swift */; };
+		DB294F8C19DB6294812476257D94400C /* AreaPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E245DAE223DB1457741DB2E3EDAB2FB9 /* AreaPicker.swift */; };
+		E27EA6302C234A8B9A00C56C5D9BFE1A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
 		E36244E8BF4AC941E82DAF16DDF4BBC2 /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9716AD15FADF38A93170E034F2BCE457 /* ConstraintPriorityTarget.swift */; };
 		E8EAADACF3BAE33BDECBC7214EAE9CD2 /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2975CA5A0D26BC84F3EE9912FEBDA795 /* ConstraintRelatableTarget.swift */; };
 		EE6C364198A763EBBF49237035D86439 /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C5188AE61F0E667CD9E7ED28CDD61C /* ConstraintLayoutGuide.swift */; };
-		EF0D38FE95826EBB4F79295378AB47ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		EF0D38FE95826EBB4F79295378AB47ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
 		F10586462FB54CEA169A1A7A469A926D /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = D038D2FAA2F6B073D1B64B8635F4E3E6 /* Debugging.swift */; };
 		F24D06C23DAB2F52A30C886A7A8177C7 /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51E99894F75F00A281BE6A32FBDE495 /* ConstraintView.swift */; };
 		F2C817C166B2DE613222C41015A586C9 /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A53CAF547D71AEFABE49D91B4E6816 /* ConstraintMakerPriortizable.swift */; };
@@ -68,28 +67,28 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1D5F00DE22FA067BD8FCCF4FBFE00DDF /* PBXContainerItemProxy */ = {
+		2CEA15B67CF5BC3E72F39F7AAD07D7BE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
 			remoteInfo = SnapKit;
 		};
-		6DED4F6A9D19B75BA0DF139EB65043D7 /* PBXContainerItemProxy */ = {
+		70B617640A63EC9F2AB4EDB36D9B7EA7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
 			remoteInfo = SnapKit;
 		};
-		C4A58ADF9F9F62E25B9CAA850B3B58F8 /* PBXContainerItemProxy */ = {
+		98AC136D08B308813CCD19E36C8AB23F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 9A361768475B62FF7E11423FCAED401A;
 			remoteInfo = "Pods-ZYTool_Example";
 		};
-		DBE779E6F6249B702DC8E37435376A3C /* PBXContainerItemProxy */ = {
+		F96C7866D54A28AA858ABE01812A4048 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -103,21 +102,24 @@
 		053CA4EAE3286D3E99C0336AFFEE440E /* Pods-ZYTool_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZYTool_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		060EFD69B4FDBA0DC4F1434262BE82C6 /* Pods-ZYTool_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZYTool_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		09BF299D2EEB87E7DD02630E87B96224 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
+		0BE2E84CC0E36CC3A4F79F67248FD752 /* ZSTool-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZSTool-dummy.m"; sourceTree = "<group>"; };
+		0C7B97ABDC9895B45CA204182F48A569 /* AreaTitleCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AreaTitleCell.swift; sourceTree = "<group>"; };
+		0FBC3D327EDF9698C72208EBF4916234 /* ZSTool-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ZSTool-Info.plist"; sourceTree = "<group>"; };
 		11D02329E74D733C03BF6BAE1F564481 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
 		13F460233F2A555D41511B6CCA66A124 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
 		141BC33167429B9926FB24A17F01568C /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
-		17030F493FDFDCE3A3C9C20E027B3043 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		2040AE6C00C847C5C1B732C6B29FD2BD /* Pods-ZYTool_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZYTool_Tests-Info.plist"; sourceTree = "<group>"; };
 		250E41DBB680A3A2ECDDD2210311B230 /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
 		25479F58B67AA43E092C7B156C1B5C1B /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
-		28AEE212605D8D464B995555A5FB6378 /* ZSTool.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ZSTool.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2975CA5A0D26BC84F3EE9912FEBDA795 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
 		2CB0A8014CE13BFD5EA3625A8AE63489 /* Pods-ZYTool_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZYTool_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3054DEC566766593FFD7E9D0BC2DF2E6 /* Pods-ZYTool_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZYTool_Example.release.xcconfig"; sourceTree = "<group>"; };
 		305CD1DAD85D8EA16DC5EE80D284CD9A /* Pods-ZYTool_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZYTool_Example-Info.plist"; sourceTree = "<group>"; };
+		36B7CF3E6080B55BCB61B7B469276C03 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		391A6F8B42D2CD885F8F3C4CE6859439 /* SnapKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SnapKit-Info.plist"; sourceTree = "<group>"; };
 		3C8CEDB0354BAF1BE296047EC8C48D4F /* Pods-ZYTool_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZYTool_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		3D705690D879064ED84970813189D8D4 /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
+		45BE8BB5ECCE7E9512816D0BF0AD2E05 /* ZSTool-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZSTool-prefix.pch"; sourceTree = "<group>"; };
 		464C01543F3BCEDEE51ABAA696513D0B /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
 		474AFC560A8B414B467174737DBC891A /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
 		47B200BD964F52F6693D4168248B8645 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
@@ -125,42 +127,54 @@
 		549471CD1FE3A1E1865DD172864918D3 /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
 		56006AA49A060CA2830F32CD6F394823 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
 		620B26C130AD8A315083676DF3201371 /* Pods-ZYTool_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZYTool_Tests.modulemap"; sourceTree = "<group>"; };
+		621E554068FC38010102D00EAD2D951F /* ZSTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZSTool.release.xcconfig; sourceTree = "<group>"; };
 		66C5188AE61F0E667CD9E7ED28CDD61C /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
 		6A9341666EAC154422A032092A7DC2D7 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
 		6C4994F1EE01310511CE8A09A7BA51D8 /* Pods-ZYTool_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZYTool_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		6CE1B86733D37A3866691F7729402E5E /* Pods-ZYTool_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZYTool_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6D33E5C914D354639DBF765D69DAAC49 /* ZSTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZSTool.release.xcconfig; sourceTree = "<group>"; };
 		6D990E0FED5B41C1F13AC6B08208A99B /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
+		6EBF108DB5AFAB74D6D164C33059BACF /* AreaContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AreaContentView.swift; sourceTree = "<group>"; };
 		724FB64349F5678CE1709979CF0DD952 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
-		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7889131C1139F96BBDA94CEE2E694763 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
 		7AE00ECC24C5CC6DC938204FF42AD0E5 /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
 		7C21E0C93A1141A1E2EB51575500E27D /* SnapKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.debug.xcconfig; sourceTree = "<group>"; };
 		7C2EC377264B25FB0E67D150E37E87CD /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
+		7DC658F6733881D02F390CFAAC0574FB /* ZSTool */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZSTool; path = ZSTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F24C426D5F9E1B0C020368015646E52 /* Pods-ZYTool_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ZYTool_Example"; path = Pods_ZYTool_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		877E325B31C76B2DD1D43EB25402D61C /* AreaConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AreaConfig.swift; sourceTree = "<group>"; };
+		88415114DC3ECCE95C8390404837DE96 /* ZYWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZYWrapper.swift; path = ZYTool/Classes/ZYWrapper.swift; sourceTree = "<group>"; };
+		89D64441D6348695F8DDC529F90034BF /* ZSTool.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZSTool.modulemap; sourceTree = "<group>"; };
 		91164BE769DA144776663FBF46785561 /* ConstraintDirectionalInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDirectionalInsets.swift; path = Source/ConstraintDirectionalInsets.swift; sourceTree = "<group>"; };
 		91A53CAF547D71AEFABE49D91B4E6816 /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
 		9716AD15FADF38A93170E034F2BCE457 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
 		979486118B3E90C08386079D57962701 /* SnapKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97C27FAF0AA5690B530C33E902266EE7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A1CD432F32277BB93DEAADA626ECEC5B /* SnapKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.release.xcconfig; sourceTree = "<group>"; };
+		A26E3331FF727FD29CF47D72C7AF26E1 /* AreaContentCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AreaContentCell.swift; sourceTree = "<group>"; };
 		A51E99894F75F00A281BE6A32FBDE495 /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
 		A6450E8749F65FA17B1CD62C63D02845 /* Pods-ZYTool_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZYTool_Example-frameworks.sh"; sourceTree = "<group>"; };
 		A7D358AA1606C7B2CDC8555485807E9E /* ConstraintDirectionalInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDirectionalInsetTarget.swift; path = Source/ConstraintDirectionalInsetTarget.swift; sourceTree = "<group>"; };
+		AD08064AB3F3E1D1A5BDC9BA116FB6E5 /* AreaTitleView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AreaTitleView.swift; sourceTree = "<group>"; };
 		B40274B9EF7D50EC167E2536433FB438 /* Pods-ZYTool_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZYTool_Example-umbrella.h"; sourceTree = "<group>"; };
 		B5D3749D99468D2498E6B9B3C7CE519F /* Pods-ZYTool_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ZYTool_Tests"; path = Pods_ZYTool_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB27B0A99417AD8BB1606424A93307CE /* ZSTool-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZSTool-umbrella.h"; sourceTree = "<group>"; };
 		BE0BE9F3D55FDB29EF516F6D6B1B6BCA /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
 		BEABCFE9C32040F8C15FDF5B5F9E11A8 /* Pods-ZYTool_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZYTool_Example-dummy.m"; sourceTree = "<group>"; };
 		C4A46A8054577838D49C60142EB88B13 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
 		CB1D9F6F4E2364DFAF158E04AF5D5EAA /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
 		CE6714C2B6E7A71EFE7F8915D4FCEC86 /* Pods-ZYTool_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZYTool_Tests-dummy.m"; sourceTree = "<group>"; };
 		D038D2FAA2F6B073D1B64B8635F4E3E6 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
+		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		D4E066869A95E00B949CBA4D2284C35F /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Source/Typealiases.swift; sourceTree = "<group>"; };
+		D82AE2FAD20D4EF2449DE3FB59DED208 /* ZSTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZSTool.debug.xcconfig; sourceTree = "<group>"; };
 		E13B89FFD81AACB7530769CA05EEA26B /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
 		E14A09DC3AD8CA84464FEC37F0FC99D1 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
+		E245DAE223DB1457741DB2E3EDAB2FB9 /* AreaPicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AreaPicker.swift; sourceTree = "<group>"; };
 		E2C3B0B200350EAC8F42EF635FF31BD1 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
 		E43F10DE451FED17810D9B5C237324A5 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
-		E752E4C42B7A009B4845D4561A795F3D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		E8E356417188489FD0924933B75AB3FC /* String+ZY.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+ZY.swift"; path = "ZYTool/Classes/String+ZY.swift"; sourceTree = "<group>"; };
+		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		EDC88AF9E0FFD1A44796F82DE7C3A60C /* Pods-ZYTool_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZYTool_Example.modulemap"; sourceTree = "<group>"; };
 		EE9055CEA7890517265589BD23D73A49 /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
 		F0BD95F32F2E57D6B9100B77B93F013C /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
@@ -168,7 +182,7 @@
 		F44C5B72775F6AF0891BF331F32FE10D /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
 		F6BB06B52C317C0A8B10B75D8D1D319C /* Pods-ZYTool_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZYTool_Tests-umbrella.h"; sourceTree = "<group>"; };
 		F7AB9BB47A2175181386A432C07253AE /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
-		FA5856A47810B24D6F74F510D85F8478 /* ZSTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZSTool.debug.xcconfig; sourceTree = "<group>"; };
+		FA2DC40F2DB649811F4667B3E68904BD /* ZSTool.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ZSTool.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,17 +210,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BA322168B6BC92FED200E5DD0B1D1742 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E35D2808296F4CD97A3467964694706 /* Foundation.framework in Frameworks */,
+				E27EA6302C234A8B9A00C56C5D9BFE1A /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1E4ADB50F72746A0CC6C316267623D89 /* Pod */ = {
+		0C8418030F1A47A21EF38F67E35F847B /* ZSTool */ = {
 			isa = PBXGroup;
 			children = (
-				17030F493FDFDCE3A3C9C20E027B3043 /* LICENSE */,
-				E752E4C42B7A009B4845D4561A795F3D /* README.md */,
-				28AEE212605D8D464B995555A5FB6378 /* ZSTool.podspec */,
+				E8E356417188489FD0924933B75AB3FC /* String+ZY.swift */,
+				88415114DC3ECCE95C8390404837DE96 /* ZYWrapper.swift */,
+				8F21BC3F55FD84EEA5798B0082C1E87F /* Area */,
+				486D2D18EDC376A5924B46596475C795 /* Pod */,
+				3DB4E116028C8DA3441F03D7582A6AF6 /* Support Files */,
 			);
-			name = Pod;
+			name = ZSTool;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		29F0ADDC5FDC2159F9E33BA904747537 /* Pods-ZYTool_Example */ = {
@@ -226,40 +260,38 @@
 			path = "Target Support Files/Pods-ZYTool_Example";
 			sourceTree = "<group>";
 		};
-		2C7A8374329DBDD3E1DE7536414FBFDC /* Development Pods */ = {
+		3DB4E116028C8DA3441F03D7582A6AF6 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				725D9050829AA98BB00EFF577F00A803 /* ZSTool */,
+				89D64441D6348695F8DDC529F90034BF /* ZSTool.modulemap */,
+				0BE2E84CC0E36CC3A4F79F67248FD752 /* ZSTool-dummy.m */,
+				0FBC3D327EDF9698C72208EBF4916234 /* ZSTool-Info.plist */,
+				45BE8BB5ECCE7E9512816D0BF0AD2E05 /* ZSTool-prefix.pch */,
+				BB27B0A99417AD8BB1606424A93307CE /* ZSTool-umbrella.h */,
+				D82AE2FAD20D4EF2449DE3FB59DED208 /* ZSTool.debug.xcconfig */,
+				621E554068FC38010102D00EAD2D951F /* ZSTool.release.xcconfig */,
 			);
-			name = "Development Pods";
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ZSTool";
 			sourceTree = "<group>";
 		};
-		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+		486D2D18EDC376A5924B46596475C795 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+				97C27FAF0AA5690B530C33E902266EE7 /* LICENSE */,
+				36B7CF3E6080B55BCB61B7B469276C03 /* README.md */,
+				FA2DC40F2DB649811F4667B3E68904BD /* ZSTool.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */,
+				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		6B2D6603ED8C3EB73BAA8883E64AEBDE /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				7F24C426D5F9E1B0C020368015646E52 /* Pods-ZYTool_Example */,
-				B5D3749D99468D2498E6B9B3C7CE519F /* Pods-ZYTool_Tests */,
-				979486118B3E90C08386079D57962701 /* SnapKit */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		725D9050829AA98BB00EFF577F00A803 /* ZSTool */ = {
-			isa = PBXGroup;
-			children = (
-				1E4ADB50F72746A0CC6C316267623D89 /* Pod */,
-				FD48A9B8CF29407EA0DD7269EBAB9ACC /* Support Files */,
-			);
-			name = ZSTool;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		7F02E3862C6E84203E8324D9D0088797 /* SnapKit */ = {
@@ -322,6 +354,20 @@
 			path = "../Target Support Files/SnapKit";
 			sourceTree = "<group>";
 		};
+		8F21BC3F55FD84EEA5798B0082C1E87F /* Area */ = {
+			isa = PBXGroup;
+			children = (
+				877E325B31C76B2DD1D43EB25402D61C /* AreaConfig.swift */,
+				A26E3331FF727FD29CF47D72C7AF26E1 /* AreaContentCell.swift */,
+				6EBF108DB5AFAB74D6D164C33059BACF /* AreaContentView.swift */,
+				E245DAE223DB1457741DB2E3EDAB2FB9 /* AreaPicker.swift */,
+				0C7B97ABDC9895B45CA204182F48A569 /* AreaTitleCell.swift */,
+				AD08064AB3F3E1D1A5BDC9BA116FB6E5 /* AreaTitleView.swift */,
+			);
+			name = Area;
+			path = ZYTool/Classes/Area;
+			sourceTree = "<group>";
+		};
 		A81569B6EF493B1F209D1581CB2035CC /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -343,20 +389,23 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				2C7A8374329DBDD3E1DE7536414FBFDC /* Development Pods */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				EB10666A0F8D421EBA61C61360FD8496 /* Development Pods */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
 				BA22F08D059965C9A09F78196176CEDB /* Pods */,
-				6B2D6603ED8C3EB73BAA8883E64AEBDE /* Products */,
+				D15F8A34F49591F2D631A6D026C138D9 /* Products */,
 				A81569B6EF493B1F209D1581CB2035CC /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		D15F8A34F49591F2D631A6D026C138D9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				578452D2E740E91742655AC8F1636D1F /* iOS */,
+				7F24C426D5F9E1B0C020368015646E52 /* Pods-ZYTool_Example */,
+				B5D3749D99468D2498E6B9B3C7CE519F /* Pods-ZYTool_Tests */,
+				979486118B3E90C08386079D57962701 /* SnapKit */,
+				7DC658F6733881D02F390CFAAC0574FB /* ZSTool */,
 			);
-			name = Frameworks;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		D3699A00C417525B8B6ED5EBCB8BEBA1 /* Pods-ZYTool_Tests */ = {
@@ -375,14 +424,12 @@
 			path = "Target Support Files/Pods-ZYTool_Tests";
 			sourceTree = "<group>";
 		};
-		FD48A9B8CF29407EA0DD7269EBAB9ACC /* Support Files */ = {
+		EB10666A0F8D421EBA61C61360FD8496 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FA5856A47810B24D6F74F510D85F8478 /* ZSTool.debug.xcconfig */,
-				6D33E5C914D354639DBF765D69DAAC49 /* ZSTool.release.xcconfig */,
+				0C8418030F1A47A21EF38F67E35F847B /* ZSTool */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/ZSTool";
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -393,6 +440,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4467357581E8345DD348683CC4111AF /* SnapKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		616AD712FE20DAA54064629E931C61C2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B136B74DC226561DCC6A05EF677BF079 /* ZSTool-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,7 +500,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				78774C7E2F8A17DB982D5B549B2A820E /* PBXTargetDependency */,
+				87518F3E359FB429DF763368374B3F50 /* PBXTargetDependency */,
 			);
 			name = "Pods-ZYTool_Tests";
 			productName = Pods_ZYTool_Tests;
@@ -464,12 +519,31 @@
 			buildRules = (
 			);
 			dependencies = (
-				EE0CB7843446A4453A6186DF3AE6EECF /* PBXTargetDependency */,
-				66724944157755F1A1411C9843ABABC9 /* PBXTargetDependency */,
+				5AEA21353E9290809F2A29724767FD3A /* PBXTargetDependency */,
+				56D00485B1CCC192FA52AA722178FA99 /* PBXTargetDependency */,
 			);
 			name = "Pods-ZYTool_Example";
 			productName = Pods_ZYTool_Example;
 			productReference = 7F24C426D5F9E1B0C020368015646E52 /* Pods-ZYTool_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+		E8AF5C1FBA887A6FEB3DFEF4E80E0C4A /* ZSTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B52FAE37F8C3983E8FFC59AAA6862E6F /* Build configuration list for PBXNativeTarget "ZSTool" */;
+			buildPhases = (
+				616AD712FE20DAA54064629E931C61C2 /* Headers */,
+				A94E14FDF649CD2AD37319D4447ADEB1 /* Sources */,
+				BA322168B6BC92FED200E5DD0B1D1742 /* Frameworks */,
+				80087EF23E834F62978041C7640440E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				147F891EAA8EEE2A1D93E291FF174B53 /* PBXTargetDependency */,
+			);
+			name = ZSTool;
+			productName = ZSTool;
+			productReference = 7DC658F6733881D02F390CFAAC0574FB /* ZSTool */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -490,7 +564,7 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 6B2D6603ED8C3EB73BAA8883E64AEBDE /* Products */;
+			productRefGroup = D15F8A34F49591F2D631A6D026C138D9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -504,6 +578,13 @@
 
 /* Begin PBXResourcesBuildPhase section */
 		7AA4790A6177F5CC7084F9596B214BB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80087EF23E834F62978041C7640440E4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -587,49 +668,114 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A94E14FDF649CD2AD37319D4447ADEB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EADB7BB7AB653A3D6C98CC8C27F8F7A /* AreaConfig.swift in Sources */,
+				4C7011BA1E943B5AE578D19861407E60 /* AreaContentCell.swift in Sources */,
+				684B3AEE8FF50A76D05DB9EA4A8361B7 /* AreaContentView.swift in Sources */,
+				DB294F8C19DB6294812476257D94400C /* AreaPicker.swift in Sources */,
+				3A56DFB8DDD7BE0BFCEA9D9F7814679E /* AreaTitleCell.swift in Sources */,
+				B6F85195236F392C8E00A203CE353878 /* AreaTitleView.swift in Sources */,
+				D6F5737AB9E679D0293AC0D1524F2F8C /* String+ZY.swift in Sources */,
+				41F39E26211050903AA164D6E7ABB981 /* ZSTool-dummy.m in Sources */,
+				7D40CEF0EAEBFFA7C9EA97F72D0866EA /* ZYWrapper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2B6F2C7A0F81826636F3123FBC185A8B /* PBXTargetDependency */ = {
+		147F891EAA8EEE2A1D93E291FF174B53 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SnapKit;
 			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
-			targetProxy = 1D5F00DE22FA067BD8FCCF4FBFE00DDF /* PBXContainerItemProxy */;
+			targetProxy = 70B617640A63EC9F2AB4EDB36D9B7EA7 /* PBXContainerItemProxy */;
 		};
-		66724944157755F1A1411C9843ABABC9 /* PBXTargetDependency */ = {
+		56D00485B1CCC192FA52AA722178FA99 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ZSTool;
 			target = E8AF5C1FBA887A6FEB3DFEF4E80E0C4A /* ZSTool */;
-			targetProxy = DBE779E6F6249B702DC8E37435376A3C /* PBXContainerItemProxy */;
+			targetProxy = F96C7866D54A28AA858ABE01812A4048 /* PBXContainerItemProxy */;
 		};
-		78774C7E2F8A17DB982D5B549B2A820E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-ZYTool_Example";
-			target = 9A361768475B62FF7E11423FCAED401A /* Pods-ZYTool_Example */;
-			targetProxy = C4A58ADF9F9F62E25B9CAA850B3B58F8 /* PBXContainerItemProxy */;
-		};
-		EE0CB7843446A4453A6186DF3AE6EECF /* PBXTargetDependency */ = {
+		5AEA21353E9290809F2A29724767FD3A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SnapKit;
 			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
-			targetProxy = 6DED4F6A9D19B75BA0DF139EB65043D7 /* PBXContainerItemProxy */;
+			targetProxy = 2CEA15B67CF5BC3E72F39F7AAD07D7BE /* PBXContainerItemProxy */;
+		};
+		87518F3E359FB429DF763368374B3F50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-ZYTool_Example";
+			target = 9A361768475B62FF7E11423FCAED401A /* Pods-ZYTool_Example */;
+			targetProxy = 98AC136D08B308813CCD19E36C8AB23F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		17EC833DD1CA4000511529908046A51B /* Debug */ = {
+		22AD924983ABDD4E0D2F8844A015E43C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA5856A47810B24D6F74F510D85F8478 /* ZSTool.debug.xcconfig */;
+			baseConfigurationReference = D82AE2FAD20D4EF2449DE3FB59DED208 /* ZSTool.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZSTool/ZSTool-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZSTool/ZSTool-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZSTool/ZSTool.modulemap";
+				PRODUCT_MODULE_NAME = ZSTool;
+				PRODUCT_NAME = ZSTool;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		3080EF97B31B9FE85753573B7B78F2D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 621E554068FC38010102D00EAD2D951F /* ZSTool.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZSTool/ZSTool-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZSTool/ZSTool-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZSTool/ZSTool.modulemap";
+				PRODUCT_MODULE_NAME = ZSTool;
+				PRODUCT_NAME = ZSTool;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		4F22AAD7EB0CACED1888EE158ED4E7EA /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -858,21 +1004,6 @@
 			};
 			name = Debug;
 		};
-		CC82861FFAA04D4183D24E9DFEC12758 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6D33E5C914D354639DBF765D69DAAC49 /* ZSTool.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1010,11 +1141,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EA6B48FD6F1229B1304407BE322A1CE2 /* Build configuration list for PBXAggregateTarget "ZSTool" */ = {
+		B52FAE37F8C3983E8FFC59AAA6862E6F /* Build configuration list for PBXNativeTarget "ZSTool" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				17EC833DD1CA4000511529908046A51B /* Debug */,
-				CC82861FFAA04D4183D24E9DFEC12758 /* Release */,
+				22AD924983ABDD4E0D2F8844A015E43C /* Debug */,
+				3080EF97B31B9FE85753573B7B78F2D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
