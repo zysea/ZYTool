@@ -15,6 +15,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		BA6FB127276C6FD100EDCCD8 /* OrgHalfLineLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6FB126276C6FD100EDCCD8 /* OrgHalfLineLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,9 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		95ED533B3E874BF29FB3BCEE /* Pods-ZYTool_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYTool_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ZYTool_Tests/Pods-ZYTool_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		BA6FB124276C6FD000EDCCD8 /* ZYTool_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZYTool_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		BA6FB125276C6FD100EDCCD8 /* OrgHalfLineLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrgHalfLineLabel.h; sourceTree = "<group>"; };
+		BA6FB126276C6FD100EDCCD8 /* OrgHalfLineLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrgHalfLineLabel.m; sourceTree = "<group>"; };
 		D74CFDA5C68025D5148C476B /* Pods-ZYTool_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYTool_Tests.release.xcconfig"; path = "Target Support Files/Pods-ZYTool_Tests/Pods-ZYTool_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		DE0764CAA556891B58C32623 /* Pods-ZYTool_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYTool_Example.release.xcconfig"; path = "Target Support Files/Pods-ZYTool_Example/Pods-ZYTool_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E1EC3D8CC8C744CF19FC91F2 /* Pods_ZYTool_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZYTool_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,12 +108,15 @@
 		607FACD21AFB9204008FA782 /* Example for ZYTool */ = {
 			isa = PBXGroup;
 			children = (
+				BA6FB125276C6FD100EDCCD8 /* OrgHalfLineLabel.h */,
+				BA6FB126276C6FD100EDCCD8 /* OrgHalfLineLabel.m */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				BA6FB124276C6FD000EDCCD8 /* ZYTool_Example-Bridging-Header.h */,
 			);
 			name = "Example for ZYTool";
 			path = ZYTool;
@@ -212,7 +219,8 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
+						DevelopmentTeam = 6P7D52U68K;
+						LastSwiftMigration = 1310;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -334,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				BA6FB127276C6FD100EDCCD8 /* OrgHalfLineLabel.m in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -480,12 +489,16 @@
 			baseConfigurationReference = 39B17F90CCBFC251C8525279 /* Pods-ZYTool_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 6P7D52U68K;
 				INFOPLIST_FILE = ZYTool/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZYTool/ZYTool_Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
@@ -496,12 +509,15 @@
 			baseConfigurationReference = DE0764CAA556891B58C32623 /* Pods-ZYTool_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 6P7D52U68K;
 				INFOPLIST_FILE = ZYTool/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZYTool/ZYTool_Example-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
