@@ -14,9 +14,9 @@ public class AreaConfig: NSObject {
     var titleSelectedFont:UIFont = UIFont.systemFont(ofSize: 14, weight: .semibold)
     var titleNormalColor:UIColor = UIColor.black
     var titleSelectedColor:UIColor = UIColor.black
-    var titlePlacehoderColor:UIColor = UIColor(red: 0.9, green: 0.9, blue: 0.8, alpha: 1)
+    var titlePlacehoderColor:UIColor = UIColor(red: 0.8, green: 0.9, blue: 0.8, alpha: 1)
     var count:Int = 3 // 地址几级
-    var tintColor:UIColor = UIColor.green
+    var tintColor:UIColor = UIColor.purple
 
     var contentNormalFont:UIFont = UIFont.systemFont(ofSize: 14, weight: .regular)
     var contentSelectedFont:UIFont = UIFont.systemFont(ofSize: 14, weight: .medium)

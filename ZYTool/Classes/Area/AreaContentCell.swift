@@ -109,13 +109,7 @@ class AreaContentTableCell: UITableViewCell {
     }
     
     func setupViews() {
-        contentView.addSubview(titleLabel)
-        titleLabel.snp.makeConstraints { make in
-            make.left.equalToSuperview()
-            make.top.equalToSuperview().offset(10)
-            make.bottom.equalToSuperview().offset(-10)
-        }
-        
+   
         contentView.addSubview(accessView)
         accessView.snp.makeConstraints { make in
             make.right.equalToSuperview()
@@ -123,6 +117,15 @@ class AreaContentTableCell: UITableViewCell {
             make.width.equalTo(30)
             make.height.equalTo(30)
         }
+        
+        contentView.addSubview(titleLabel)
+        titleLabel.snp.makeConstraints { make in
+            make.left.equalToSuperview()
+            make.top.equalToSuperview().offset(10)
+            make.bottom.equalToSuperview().offset(-10)
+            make.right.equalTo(accessView.snp.left).offset(-10)
+        }
+        
     }
     
     lazy var titleLabel: UILabel = {

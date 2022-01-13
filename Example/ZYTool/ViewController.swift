@@ -12,7 +12,7 @@ import ZSTool
 class ViewController: UIViewController {
 
     let arr = ["北京市","天津市"]
-    let arr1 = [["北京市"],["天津市dsadsadasdsadsadsadsadsadasdasda"]]
+    let arr1 = [["北京市"],["天津市dsadsadasdsadsadsadsadsadasdasda天津市dsadsadasdsadsadsadsadsadasdasda"]]
     var subs = [String]()
     let arr2 = ["朝阳区","海淀区"]
     let arr3 = ["红桥区","北辰区"]
@@ -21,13 +21,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        view.addSubview(picker)
-//
-//        picker.snp.makeConstraints { make in
-//            make.edges.equalToSuperview()
-//        }
-//        picker.dataSource = self
-//        picker.delegate = self
+        view.addSubview(picker)
+
+        picker.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+            
+        }
+        picker.dataSource = self
+        picker.delegate = self
         let text = "asdasdasdaddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddeee"
         
         let label = ZYMoreLabel()
