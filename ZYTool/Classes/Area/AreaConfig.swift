@@ -24,6 +24,6 @@ public class AreaConfig: NSObject {
     var contentSelectedColor:UIColor = UIColor.black
     
     var titleSpace:CGFloat = 10
-    
+
     static let share = AreaConfig()
 }

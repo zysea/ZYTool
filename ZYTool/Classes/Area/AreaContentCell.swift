@@ -15,7 +15,7 @@ class AreaContentCell: UICollectionViewCell,UITableViewDataSource,UITableViewDel
     private var titleOfRow:((_ section:Int,_ row:Int) -> String)?
     
     private var didSelected:((_ section:Int,_ row:Int,_ title:String) -> Void)?
-        
+    
     var selectedIndex:Int = -1
     var index:Int = 0
     
@@ -43,17 +43,10 @@ class AreaContentCell: UICollectionViewCell,UITableViewDataSource,UITableViewDel
     
     private func setupViews() {
         contentView.addSubview(tableView)
-        tableView.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
-        }
     }
     
     override func prepareForReuse() {
         super.prepareForReuse()
-//        didSelected = nil
-//        numberOfRows = nil
-//        titleOfRow = nil
-//        tableView.reloadData()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -67,7 +60,7 @@ class AreaContentCell: UICollectionViewCell,UITableViewDataSource,UITableViewDel
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AreaContentTableCell")
         if let cell = cell as? AreaContentTableCell {
-//            debugPrint(indexPath)
+            //            debugPrint(indexPath)
             cell.titleLabel.text = titleOfRow?(index,indexPath.row)
             let isHidden = !(selectedIndex == indexPath.row)
             cell.accessView.isHidden = isHidden
@@ -88,10 +81,20 @@ class AreaContentCell: UICollectionViewCell,UITableViewDataSource,UITableViewDel
         $0.tableFooterView = UIView()
         $0.backgroundColor = .clear
         $0.delegate = self
-        $0.dataSource = self 
+        $0.dataSource = self
+        $0.rowHeight = 50
         $0.register(AreaContentTableCell.self, forCellReuseIdentifier: "AreaContentTableCell")
         return $0
     }(UITableView())
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        tableView.frame = bounds
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 50
+    }
 }
 
 class AreaContentTableCell: UITableViewCell {
@@ -109,23 +112,8 @@ class AreaContentTableCell: UITableViewCell {
     }
     
     func setupViews() {
-   
         contentView.addSubview(accessView)
-        accessView.snp.makeConstraints { make in
-            make.right.equalToSuperview()
-            make.centerY.equalToSuperview()
-            make.width.equalTo(30)
-            make.height.equalTo(30)
-        }
-        
         contentView.addSubview(titleLabel)
-        titleLabel.snp.makeConstraints { make in
-            make.left.equalToSuperview()
-            make.top.equalToSuperview().offset(10)
-            make.bottom.equalToSuperview().offset(-10)
-            make.right.equalTo(accessView.snp.left).offset(-10)
-        }
-        
     }
     
     lazy var titleLabel: UILabel = {
@@ -135,9 +123,14 @@ class AreaContentTableCell: UITableViewCell {
     }(UILabel())
     
     lazy var accessView: UILabel = {
-//        $0.font = AreaConfig.share.contentNormalFont
         $0.textColor = AreaConfig.share.tintColor
         $0.text = "✓"
         return $0
     }(UILabel())
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        titleLabel.frame = CGRect(x: 5, y: 0, width: bounds.width - 40, height: bounds.height)
+        accessView.frame = CGRect(x: bounds.width - 35, y: (bounds.height - 30)/2, width: 30, height: 30)
+    }
 }

@@ -47,10 +47,7 @@ class AreaContentView: UIView,UITableViewDataSource,UITableViewDelegate {
     
     private func setupViews() {
         addSubview(tableView)
-//        tableView.backgroundColor = .yellow
-        tableView.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
-        }
+        tableView.frame = bounds
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -83,9 +80,6 @@ class AreaContentView: UIView,UITableViewDataSource,UITableViewDelegate {
     }
     
     lazy var tableView: UITableView = {
-//        $0.separatorStyle = .singleLine
-//        $0.tableFooterView = UIView()
-//        $0.backgroundColor = .clear
         $0.delegate = self
         $0.dataSource = self
         $0.register(AreaContentTableCell.self, forCellReuseIdentifier: "AreaContentTableCell")

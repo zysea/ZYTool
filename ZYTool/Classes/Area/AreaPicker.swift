@@ -66,26 +66,11 @@ public class AreaPicker: UIView {
     
     func setup() {
         addSubview(titleView)
-        titleView.snp.makeConstraints { make in
-            make.top.left.right.equalToSuperview()
-            make.height.equalTo(40)
-        }
-        let view = UIView()
-        addSubview(view)
         titleView.setDidSelected { [weak self] (row, title) in
             guard let self = self else {return}
             self.collectionView.scrollToItem(at: IndexPath(row: row, section: 0), at: .centeredHorizontally, animated: true)
         }
-        
-        view.snp.makeConstraints { make in
-            make.left.right.bottom.equalToSuperview()
-            make.top.equalTo(titleView.snp.bottom)
-        }
-        
-        view.addSubview(collectionView)
-        collectionView.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
-        }
+       addSubview(collectionView)
     }
     
     
@@ -114,33 +99,33 @@ public class AreaPicker: UIView {
         }
     }
     
-    func setBlock(_ target:AreaContentView,section:Int) {
-        target.page = section
-
-        target.setNumberOfRows {[weak self]  page in
-            debugPrint("setNumberOfRows",page)
-            guard let self = self,let dataSourse = self.dataSource else { return 0}
-            let count = dataSourse.numberOfRowsAtSection(self, section: page)
-            return count
-        }
-        
-        target.setTitleOfRow { [weak self] (page,row) in
-            guard let self = self,let dataSourse = self.dataSource else { return ""}
-            debugPrint("setTitleOfRow",page)
-            return dataSourse.titleOfIndexPath(self, indexPath: IndexPath(item: row, section: page))
-        }
-        
-        target.setDidSelected {[weak self] (page,row,title) in
-            guard let self = self else { return}
-            let newIndexPath = IndexPath(item: row, section: page)
-            self.replace(title, at: section)
-
-            if let delegate = self.delegate  {
-                delegate.didSelected(self, indexPath: newIndexPath)
-            }
-        }
-        target.tableView.reloadData()
-    }
+//    func setBlock(_ target:AreaContentView,section:Int) {
+//        target.page = section
+//
+//        target.setNumberOfRows {[weak self]  page in
+//            debugPrint("setNumberOfRows",page)
+//            guard let self = self,let dataSourse = self.dataSource else { return 0}
+//            let count = dataSourse.numberOfRowsAtSection(self, section: page)
+//            return count
+//        }
+//
+//        target.setTitleOfRow { [weak self] (page,row) in
+//            guard let self = self,let dataSourse = self.dataSource else { return ""}
+//            debugPrint("setTitleOfRow",page)
+//            return dataSourse.titleOfIndexPath(self, indexPath: IndexPath(item: row, section: page))
+//        }
+//
+//        target.setDidSelected {[weak self] (page,row,title) in
+//            guard let self = self else { return}
+//            let newIndexPath = IndexPath(item: row, section: page)
+//            self.replace(title, at: section)
+//
+//            if let delegate = self.delegate  {
+//                delegate.didSelected(self, indexPath: newIndexPath)
+//            }
+//        }
+//        target.tableView.reloadData()
+//    }
     
     lazy var titleView: AreaTitleView = {
         return $0
@@ -148,6 +133,8 @@ public class AreaPicker: UIView {
     
     public override func layoutSubviews() {
         super.layoutSubviews()
+        titleView.frame = CGRect(x: 0, y: 0, width: bounds.width, height: 40)
+        collectionView.frame = CGRect(x: 0, y: 40, width: bounds.width, height: bounds.height - 40)
     }
     
     public var dataSource:AreaPickerDataSource? {
