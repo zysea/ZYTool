@@ -21,11 +21,15 @@ class AreaTitleCell: UICollectionViewCell {
     
     func setupViews() {
         contentView.addSubview(titleLabel)
-        titleLabel.snp.makeConstraints { make in
-            make.left.right.bottom.top.equalToSuperview()
-        }
+//        titleLabel.snp.makeConstraints { make in
+//            make.left.right.bottom.top.equalToSuperview()
+//        }
     }
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        titleLabel.frame = bounds
+    }
     
     lazy var titleLabel: UILabel = {
         $0.font = AreaConfig.share.contentNormalFont
@@ -48,9 +52,14 @@ class AreaTitlePlacehoderCell: UICollectionViewCell {
     
     func setupViews() {
         contentView.addSubview(titleLabel)
-        titleLabel.snp.makeConstraints { make in
-            make.left.right.bottom.top.equalToSuperview()
-        }
+//        titleLabel.snp.makeConstraints { make in
+//            make.left.right.bottom.top.equalToSuperview()
+//        }
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        titleLabel.frame = bounds
     }
     
     lazy var titleLabel: UILabel = {

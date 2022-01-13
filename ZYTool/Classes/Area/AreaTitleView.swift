@@ -36,6 +36,7 @@ class AreaTitleView: UIView {
     
     var titles:[String] = [String]() {
         didSet {
+            debugPrint(titles)
             collectionView.reloadData()
         }
     }
@@ -47,15 +48,18 @@ class AreaTitleView: UIView {
     
     private func setup() {
         addSubview(collectionView)
-        collectionView.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
-        }
         currentNumber = 1
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        collectionView.frame = bounds
     }
     
     lazy var flowLayout: UICollectionViewFlowLayout = {
         let layout = UICollectionViewFlowLayout()
-        layout.estimatedItemSize = CGSize(width: 100, height:40)
+        layout.itemSize = CGSize(width: 100, height: 40)
+//        layout.estimatedItemSize = CGSize(width: 100, height:40)
         layout.minimumInteritemSpacing = AreaConfig.share.titleSpace
         layout.minimumLineSpacing = AreaConfig.share.titleSpace
         layout.scrollDirection = .horizontal
@@ -83,6 +87,8 @@ extension AreaTitleView: UICollectionViewDataSource {
         if indexPath.row < titles.count {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AreaTitleCell", for: indexPath)
             if let cell = cell as? AreaTitleCell {
+                let text = titles[indexPath.row]
+                debugPrint("title",text)
                 cell.titleLabel.text = titles[indexPath.row]
                 if selectedIndex == indexPath.row {
                     cell.titleLabel.textColor = AreaConfig.share.titleSelectedColor
@@ -97,16 +103,32 @@ extension AreaTitleView: UICollectionViewDataSource {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AreaTitlePlacehoderCell", for: indexPath)
         if let cell = cell as? AreaTitlePlacehoderCell {
-            cell.titleLabel.text = placehoders[indexPath.row]
+            let text = placehoders[indexPath.row]
+            debugPrint("title",text)
+            cell.titleLabel.text = text
         }
         return cell
     }
     
 }
 
-extension AreaTitleView: UICollectionViewDelegate {
+extension AreaTitleView: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         selectedIndex = indexPath.row
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        var title = placehoders[indexPath.row]
+        debugPrint("title",title)
+        if indexPath.row < titles.count {
+            title = titles[indexPath.row]
+        }
+        let font = selectedIndex == indexPath.row ? AreaConfig.share.titleSelectedFont : AreaConfig.share.titleNormalFont
+        let label = UILabel()
+        label.font = font
+        label.text = title
+        label.sizeToFit()
+        return label.bounds.size
     }
 }

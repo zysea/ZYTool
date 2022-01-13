@@ -84,6 +84,10 @@ public class AreaPicker: UIView {
     }
     
     func replace(_ title:String,at index:Int) {
+        if title.isEmpty {
+            return
+        }
+        debugPrint("title",title)
         if index < titles.count {
             if titles[index] == title {
                 titles.remove(at: index)
@@ -128,6 +132,7 @@ public class AreaPicker: UIView {
 //    }
     
     lazy var titleView: AreaTitleView = {
+        $0.backgroundColor = .white
         return $0
     }(AreaTitleView())
     
@@ -204,10 +209,6 @@ extension AreaPicker: UICollectionViewDataSource,UICollectionViewDelegateFlowLay
                     delegate.didSelected(self, indexPath: newIndexPath)
                 }
                 collectionView.reloadData()
-//                if nextRow <= collectionView.numberOfSections {
-//                    collectionView.scrollToItem(at: IndexPath(row: nextRow, section: 0), at: .top, animated: true)
-//                }
-                
             }
         }
         return cell

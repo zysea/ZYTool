@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZSTool'
-  s.version          = '0.1.5'
+  s.version          = '0.1.6'
   s.summary          = 'A short description of ZSTool,AreaSelected,String Extesion'
 
 # This description is used to generate tags and improve search results.

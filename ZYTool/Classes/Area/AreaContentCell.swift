@@ -69,11 +69,11 @@ class AreaContentCell: UICollectionViewCell,UITableViewDataSource,UITableViewDel
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        selectedIndex = indexPath.row
-        tableView.reloadData()
         let cell = tableView.cellForRow(at: indexPath) as? AreaContentTableCell
         let title =  cell?.titleLabel.text ?? ""
         didSelected?(index,indexPath.row,title)
+        selectedIndex = indexPath.row
+        tableView.reloadData()
     }
     
     lazy var tableView: UITableView = {
