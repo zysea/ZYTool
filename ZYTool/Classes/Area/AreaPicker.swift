@@ -7,6 +7,7 @@
 
 import Foundation
 import SnapKit
+import UIKit
 
 public enum AreaPickerSource:Int {
     case province
@@ -85,14 +86,8 @@ public class AreaPicker: UIView {
         collectionView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
-//        view.addSubview(scrollView)
-//        scrollView.snp.makeConstraints { make in
-//            make.edges.equalToSuperview()
-//        }
-//
-//        _count = dataSource?.numberOfSections(self) ?? 0
-//        self.setNeedsLayout()
     }
+    
     
     func insert(_ title:String,at index:Int) {
         titles.insert(title, at: index)
@@ -153,8 +148,6 @@ public class AreaPicker: UIView {
     
     public override func layoutSubviews() {
         super.layoutSubviews()
-        flowLayout.itemSize = collectionView.superview?.bounds.size ?? .zero
-        
     }
     
     public var dataSource:AreaPickerDataSource? {
@@ -172,6 +165,7 @@ public class AreaPicker: UIView {
         layout.minimumInteritemSpacing = 0
         layout.minimumLineSpacing = 0
         layout.scrollDirection = .horizontal
+        layout.itemSize = CGSize(width: 200, height: 200)
         return layout
     }()
     
@@ -192,7 +186,7 @@ public class AreaPicker: UIView {
     }(UIScrollView())
 }
 
-extension AreaPicker: UICollectionViewDataSource,UICollectionViewDelegate {
+extension AreaPicker: UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AreaContentCell", for: indexPath)
         if let cell = cell as? AreaContentCell {
@@ -253,4 +247,9 @@ extension AreaPicker: UICollectionViewDataSource,UICollectionViewDelegate {
         titleView.selectedIndex = index
     }
     
+    
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let size = bounds.size
+        return CGSize(width: size.width, height: size.height - 40)
+    }
 }
